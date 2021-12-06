@@ -7,11 +7,12 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.PrimaryController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.PrimaryController">
    <children>
       <TextField id="usernameTextField" />
       <PasswordField id="passwordTextField" />
       <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Аутентификация" />
+      <Button fx:id="registerBtn" mnemonicParsing="false" onMouseClicked="#switchToReg" text="Регистрация" />
       <Label id="messageArea" />
    </children>
    <padding>

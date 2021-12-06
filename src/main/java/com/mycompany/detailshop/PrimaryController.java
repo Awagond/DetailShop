@@ -52,6 +52,9 @@ public class PrimaryController {
             messageArea.setText("Неверный логин или пароль");
         }
     }
-
+    @FXML
+    private void switchToReg() throws IOException {
+        App.setRoot("register");
+    }
     
 }

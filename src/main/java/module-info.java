@@ -4,6 +4,7 @@ module com.mycompany.detailshop {
     requires java.persistence;
     requires java.sql;
     requires org.hibernate.orm.core;
+    requires java.base;
 
     opens com.mycompany.detailshop to javafx.fxml;
     opens com.mycompany.detailshop.db;
