@@ -5,6 +5,7 @@
     <class>com.mycompany.detailshop.db.Role</class>
     <class>com.mycompany.detailshop.db.Users</class>
     <class>com.mycompany.detailshop.db.Role_1</class>
+    <class>com.mycompany.detailshop.db.Product</class>
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/salesdb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>

@@ -2,6 +2,7 @@ package com.mycompany.detailshop;
 
 
 import com.mycompany.detailshop.db.Users;
+import com.mycompany.detailshop.db.Role;
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -43,13 +44,17 @@ public class PrimaryController {
 
             if (user.getPassword().equals(password)) {
                 messageArea.setText("");
-                App.setRoot("secondary");
+                Role role = user.getIdrole();
+                if (role.getName().equals("admin")) {
+                App.setRoot("adminpanel");
+                } else {
+                    App.setRoot("secondary");
+                }
             } else {
-                messageArea.setText("Неверный логин или пароль");
+                messageArea.setText("Неверный логин и пароль");
             }
-
         } catch (NoResultException e) {
-            messageArea.setText("Неверный логин или пароль");
+            messageArea.setText("Неверный логин и пароль");
         }
     }
     @FXML
