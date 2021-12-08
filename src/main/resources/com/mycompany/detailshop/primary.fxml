@@ -6,13 +6,19 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.PrimaryController">
+<VBox alignment="CENTER" prefHeight="354.0" prefWidth="454.0" spacing="20.0" style="-fx-background-color: #69779B;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.PrimaryController">
    <children>
-      <TextField id="usernameTextField" />
-      <PasswordField id="passwordTextField" />
-      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Аутентификация" />
-      <Button fx:id="registerBtn" mnemonicParsing="false" onMouseClicked="#switchToReg" text="Регистрация" />
+      <Label text="Login" textFill="#acdbdf">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField id="usernameTextField" promptText="Login" style="-fx-background-color: #D7EAEA;" />
+      <PasswordField id="passwordTextField" promptText="Password" style="-fx-background-color: #D7EAEA;" />
+      <Button fx:id="primaryButton" onAction="#switchToSecondary" style="-fx-background-color: #9692AF;" text="Аутентификация" textFill="#d7eaea" />
+      <Button fx:id="registerBtn" mnemonicParsing="false" onMouseClicked="#switchToReg" style="-fx-background-color: #9692AF;" text="Регистрация" textFill="#d7eaea" />
       <Label id="messageArea" />
    </children>
    <padding>

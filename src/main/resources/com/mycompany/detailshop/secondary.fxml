@@ -6,18 +6,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="313.0" prefWidth="562.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.SecondaryController">
+<VBox alignment="CENTER" prefHeight="313.0" prefWidth="562.0" spacing="20.0" style="-fx-background-color: #69779B;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.SecondaryController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
       <TableView fx:id="panel" prefHeight="200.0" prefWidth="525.0">
          <columns>
-            <TableColumn fx:id="idProduct" prefWidth="175.0" text="Артикуль" />
-            <TableColumn fx:id="detail" prefWidth="175.0" text="Деталь" />
-            <TableColumn fx:id="price" prefWidth="175.0" text="Цена" />
+            <TableColumn fx:id="idProduct" prefWidth="175.0" style="-fx-background-color: #D7EAEA;" text="Артикуль" />
+            <TableColumn fx:id="detail" prefWidth="175.0" style="-fx-background-color: #D7EAEA;" text="Деталь" />
+            <TableColumn fx:id="price" prefWidth="175.0" style="-fx-background-color: #D7EAEA;" text="Цена" />
          </columns>
       </TableView>
-      <Button mnemonicParsing="false" onMouseClicked="#switchToPrimary" text="Закрыть" />
+      <Button mnemonicParsing="false" onMouseClicked="#switchToPrimary" style="-fx-background-color: #9692AF;" text="Закрыть" textFill="#d7eaea" />
    </children>
 </VBox>

@@ -6,21 +6,20 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.mycompany.detailshop.AdminPanelController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #69779B;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.AdminPanelController">
    <children>
       <TableView fx:id="panel" layoutX="25.0" layoutY="14.0" onMouseClicked="#onMouseClicked1" prefHeight="200.0" prefWidth="525.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
         <columns>
-            <TableColumn fx:id="idProduct" prefWidth="175.0" text="Артикуль" />
-          <TableColumn fx:id="detail" prefWidth="175.0" text="Деталь" />
-          <TableColumn fx:id="price" prefWidth="175.0" text="Цена" />
+            <TableColumn fx:id="idProduct" prefWidth="175.0" style="-fx-background-color: #D7EAEA;" text="Артикуль" />
+          <TableColumn fx:id="detail" prefWidth="175.0" style="-fx-background-color: D7EAEA;" text="Деталь" />
+          <TableColumn fx:id="price" prefWidth="175.0" style="-fx-background-color: #D7EAEA;" text="Цена" />
         </columns>
       </TableView>
-      <TextField fx:id="arcticulTextField" layoutX="226.0" layoutY="233.0" promptText="Артикуль" />
-      <TextField fx:id="detailTextField" layoutX="226.0" layoutY="268.0" promptText="Деталь" />
-      <TextField fx:id="priceTextField" layoutX="226.0" layoutY="308.0" promptText="Цена" />
-      <Button fx:id="addBtn" layoutX="157.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#addProduct" text="Добавить" />
-      <Button fx:id="delBtn" layoutX="375.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#deleteProduct" text="Удалить" />
-      <Button layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#onCloseClicked" text="Закрыть" />
+      <TextField fx:id="arcticulTextField" layoutX="226.0" layoutY="233.0" promptText="Артикуль" style="-fx-background-color: #D7EAEA;" />
+      <TextField fx:id="detailTextField" layoutX="226.0" layoutY="268.0" promptText="Деталь" style="-fx-background-color: #D7EAEA;" />
+      <TextField fx:id="priceTextField" layoutX="226.0" layoutY="308.0" promptText="Цена" style="-fx-background-color: #D7EAEA;" />
+      <Button fx:id="addBtn" layoutX="157.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#addProduct" style="-fx-background-color: #9692AF;" text="Добавить" textFill="#d7eaea" />
+      <Button fx:id="delBtn" layoutX="375.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#deleteProduct" style="-fx-background-color: #9692AF;" text="Удалить" textFill="#d7eaea" />
+      <Button layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#onCloseClicked" style="-fx-background-color: #9692AF;" text="Закрыть" textFill="#d7eaea" />
    </children>
 </AnchorPane>

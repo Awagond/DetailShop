@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.mycompany.detailshop.RegisterController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #69779B;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.detailshop.RegisterController">
    <children>
-      <TextField fx:id="loginTextField" layoutX="226.0" layoutY="80.0" />
-      <Button fx:id="regBtn" layoutX="275.0" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#switchToLogin" text="Button" />
-      <PasswordField fx:id="passwordTextField" layoutX="226.0" layoutY="175.0" />
-      <TextField fx:id="nameTextField" layoutX="226.0" layoutY="124.0" />
+      <TextField fx:id="loginTextField" layoutX="226.0" layoutY="93.0" promptText="Login" style="-fx-background-color: #D7EAEA;" />
+      <Button fx:id="regBtn" layoutX="236.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#switchToLogin" style="-fx-background-color: #9692AF;" text="Зарегистрироваться" textFill="#d7eaea" />
+      <PasswordField fx:id="passwordTextField" layoutX="226.0" layoutY="188.0" promptText="Пароль" style="-fx-background-color: #D7EAEA;" />
+      <TextField fx:id="nameTextField" layoutX="226.0" layoutY="137.0" promptText="Password" style="-fx-background-color: #D7EAEA;" />
+      <Label layoutX="212.0" layoutY="27.0" text="Registration" textFill="#acdbdf">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
