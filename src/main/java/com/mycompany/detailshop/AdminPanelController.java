@@ -115,23 +115,6 @@ public class AdminPanelController {
        
     }
     
-
-    @FXML
-    private void onMouseClicked1() throws IOException {
-        // Получаем информацию о выбранной строке таблицы:
-        TableView.TableViewSelectionModel sm = panel.getSelectionModel();
-        int rowIndex = sm.getSelectedIndex();
-        //System.out.println(rowIndex);
-        
-        // Получаем содержимое строки таблицы по индексу:
-        selectedProduct = (Product) panel.getItems().get(rowIndex);
-        //System.out.println(selectedProduct);
-        
-        // Подгружаем данные выбранного пользователя 
-        // в панель редактирования справа:
-        detailTextField.setText(selectedProduct.getName());
-
-    }
      @FXML
     private void onCloseClicked() {
         System.exit(0);
